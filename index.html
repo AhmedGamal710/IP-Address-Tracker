@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+
+ <header>
+        <h1 class="app-title"> IP Address Tracker</h1>
+
+        <div class="search-board">
+            <form >
+                <input type="text" title="ip-address" name="ip-address" id="ip-address" aria-label="ip-address-input"  name="ip-address-input" placeholder=" Search for any IP address or domain" minlength="7">
+                <button type="submit" title="submit" name="submit" id="search-location-btn"><img src="./images/icon-arrow.svg" alt="icon-arrow"></button>
+            </form>
+          </div>
+          <h4>STATUS: <span class="status">DETECTING CLIENT IP</span></h4>
+ </header>
+ <main>
+   <div class="board">
+        <div class="display-details">
+          <div>
+            <span>IP ADDRESS</span>
+            <h4 class="ip">...</h4>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <span>LOCATION</span>
+            <h4 class="location">...</h4>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <span>TIMEZONE</span>
+            <h4 class="timezone">...</h4>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <span>ISP</span>
+            <h4 class="isp">...</h4>
+          </div>
+      </div>  
+     </div>
+    <div class="map"></div>
+ </main>
+  
+  <footer>
+      <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="twitter.com/DevSyntactic">Syntactic Dev</a>.
+  </div>
+  </footer>
+
+  <script  src="./app.js" type="module" ></script>
+</body>
+</html>
